@@ -57,6 +57,44 @@
           </div>
         </div>
       </nav>
-
+      <div class="container my-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <h1 class="mb-3">Contact Us</h1>
+            <form action="https://us-central1-steam-center-app-dev.cloudfunctions.net/formToEmail" method="POST"> 
+              <input name="send-to" value="amirilayne@gmail.com" hidden>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="your-name" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" id="your-name" name="your-name" placeholder="John Doe" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="your-surname" class="form-label">Order Number</label>
+                  <input type="text" class="form-control" id="your-surname" name="your-surname" placeholder="#123456789" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="your-email" class="form-label">Your Email</label>
+                  <input type="email" class="form-control" id="your-email" name="your-email" placeholder="ABC123@example.com" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="your-subject" class="form-label">Your Subject</label>
+                  <input type="text" class="form-control" id="your-subject" name="your-subject" placeholder="Subject here">
+                </div>
+                <div class="col-12">
+                  <label for="your-message" class="form-label">Your Message</label>
+                  <textarea class="form-control" id="your-message" name="your-message" rows="5" placeholder="Messsage Here" required></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <button data-res=" ?php echo $sum; ?>" type="submit" class="btn btn-dark w-100 fw-bold" >Send</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
 </body>
 </html>
