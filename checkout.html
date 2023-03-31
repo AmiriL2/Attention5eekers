@@ -59,7 +59,6 @@
       <main>
         <div class="py-5 text-center">
           <h1>Checkout</h1>
-          <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
         </div>
     
         <div class="row g-5">
@@ -98,7 +97,29 @@
             <form class="card p-2">
               <div class="input-group">
                 <input type="text" class="form-control" placeholder="Promo code">
-                <button type="submit" class="btn btn-secondary" data-toggle="modal">Redeem</button>
+                 <!-- Button trigger modal -->
+<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalCenter">
+  Redeem
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLongTitle">We've struck a problem!</h1>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+        </button>
+      </div>
+      <div class="modal-body">
+       This code is either invalid or expired, please try again.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
               </div>
             </form>
           </div>
@@ -108,7 +129,7 @@
               <div class="row g-3">
                 <div class="col-sm-6">
                   <label for="firstName" class="form-label">First Name</label>
-                  <input type="text" class="form-control" id="firstName" placeholder="John" value="" required>
+                  <input type="text" class="form-control" id="firstName" placeholder="John"equired>
                   <div class="invalid-feedback">
                     Valid first name is required.
                   </div>
@@ -116,7 +137,7 @@
     
                 <div class="col-sm-6">
                   <label for="lastName" class="form-label">Last Name</label>
-                  <input type="text" class="form-control" id="lastName" placeholder="Doe" value="" required>
+                  <input type="text" class="form-control" id="lastName" placeholder="Doe"equired>
                   <div class="invalid-feedback">
                     Valid last name is required.
                   </div>
@@ -157,7 +178,7 @@
                 <div class="col-md-5">
                   <label for="country" class="form-label">Country</label>
                   <select class="form-select" id="country" required>
-                    <option value="">Choose...</option>
+                    <optionhoose...</option>
                     <option>United States</option>
                   </select>
                   <div class="invalid-feedback">
@@ -168,8 +189,60 @@
                 <div class="col-md-4">
                   <label for="state" class="form-label">State</label>
                   <select class="form-select" id="state" required>
-                    <option value="">Choose...</option>
-                    <option>California</option>
+                    <optionhoose...</option>
+                    <option/A</option>
+			<option>Alaska</option>
+			<option>Alabama</option>
+			<option>Arkansas</option>
+			<option>Arizona</option>
+			<option>California</option>
+			<option>Colorado</option>
+			<option>Connecticut</option>
+			<option>District of Columbia</option>
+			<option>Delaware</option>
+			<option>Florida</option>
+			<option>Georgia</option>
+			<option>Hawaii</option>
+			<option>Iowa</option>
+			<option>Idaho</option>
+			<option>Illinois</option>
+			<option>Indiana</option>
+			<option>Kansas</option>
+			<option>Kentucky</option>
+			<option>Louisiana</option>
+			<option>Massachusetts</option>
+			<option>Maryland</option>
+			<option>Maine</option>
+			<option>Michigan</option>
+			<option>Minnesota</option>
+			<option>Missouri</option>
+			<option>Mississippi</option>
+			<option>Montana</option>
+			<option>North Carolina</option>
+			<option>North Dakota</option>
+			<option>Nebraska</option>
+			<option>New Hampshire</option>
+			<option>New Jersey</option>
+			<option>New Mexico</option>
+			<option>Nevada</option>
+			<option>New York</option>
+			<option>Ohio</option>
+			<option>Oklahoma</option>
+			<option>Oregon</option>
+			<option>Pennsylvania</option>
+			<option>Puerto Rico</option>
+			<option>Rhode Island</option>
+			<option>South Carolina</option>
+			<option>South Dakota</option>
+			<option>Tennessee</option>
+			<option>Texas</option>
+			<option>Utah</option>
+			<option>Virginia</option>
+			<option>Vermont</option>
+			<option>Washington</option>
+			<option>Wisconsin</option>
+			<option>West Virginia</option>
+			<option>Wyoming</option>
                   </select>
                   <div class="invalid-feedback">
                     Please provide a valid state.
@@ -274,6 +347,5 @@
     
           <script src="form-validation.js"></script>
 </div>
-
 </body>
 </html>
